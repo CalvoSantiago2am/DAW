@@ -28,7 +28,7 @@ body{
     z-index:-99 ;
   }
 
-  .Nav1 li {
+  .Nav1 ul li {
     display: flex;
     justify-content: center;
     float: left; 
@@ -36,7 +36,7 @@ body{
 
   }
 
-  .Nav1 li a:link {
+  .Nav1 ul li a:link {
 
     font-family: Verdana, Arial, Helvetica;
     text-decoration: none;
@@ -45,7 +45,7 @@ body{
     text-align: center;
     padding: 10px 20px;  
   }
-  .Nav1 li a:visited {
+  .Nav1 ul li a:visited {
 
     font-family: Verdana, Arial, Helvetica;
     text-decoration: none;
@@ -68,10 +68,10 @@ body{
 main{
     font-family: Verdana, Arial, Helvetica;
     padding:auto;
-    margin:auto;
+    margin: auto;
     text-align:center ;
     text-align:justify;
-    align-items: center ;
+    align-items: left ;
     width: 600px;
 }
 main p{
@@ -223,4 +223,23 @@ footer img{
     
 }
 
-  
+@media screen and (max-width:1300px) {
+  #MenuTop1{
+    display: none;
+  }
+
+}
+
+@media screen and (min-width:1200px) {
+  main{
+    margin-left: 300px;
+  }
+
+}
+
+
+@media screen and (min-width: 1300px){
+  #MenuTop2{
+    display: none;
+  }
+}
